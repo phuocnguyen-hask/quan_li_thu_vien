@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hihi</title>
-    <link rel="stylesheet" href="static/css/frame.css">
+    <link rel="stylesheet" href="static/css/cate.css">
 </head>
 <body>
     <!-- nav bar -->
@@ -61,7 +61,22 @@
     <div class="big-container">    
     <main class="main-container">
         <div class="second-main-container">
-            <div class="content-wraper"></div>
+            <div class="content-wraper">
+                <div class="breadcrumb">
+                    <a href="index.html">🏠 Trang chủ</a> <span class="separator">/</span>
+                    <a href="#">Thể loại</a> <span class="separator">/</span>
+                    <a id="breadcrumb-genre"></a>
+                </div>
+                <h1 class="genre-title" id="genre-title"></h1>
+                <div class="tip-box">
+                    <b>MẸO SỬ DỤNG:</b>
+                    Sử dụng chức năng lọc Anime trên thanh công cụ để lọc những phim bạn đang cần xem chính xác nhất.
+                </div>
+                <div class="pagination" id="pagination-top"></div>
+                <div class="anime-grid" id="anime-list"></div>
+                <div class="pagination" id="pagination-bottom"></div>
+                
+            </div>
         
             <aside class="sidebar">
                     <div class="sidebar-box">
@@ -144,6 +159,6 @@
         © 2026 Meo meo meo reserved.
     </footer>
     
-    <script src="index.js"></script>
+    <script src="static/js/cate.js"></script>
 </body>
 </html>

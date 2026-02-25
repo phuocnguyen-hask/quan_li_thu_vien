@@ -261,6 +261,101 @@ input::placeholder{
     color: #a2cf27;
 }
 
+/*breadcrumb styles*/
+.breadcrumb {
+    margin: 15px 0;
+    font-size: 14px;
+}
+.breadcrumb .separator {
+    margin: 0 5px;
+    color: #839baa;
+}
+.breadcrumb a {
+    color: #839baa;
+    text-decoration: none;
+}
+.breadcrumb a:hover {
+    color: #fff;
+}
+
+/* genre title styles */
+.genre-title {
+  background: #b7f34f;
+  color: #000;
+  padding: 10px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.tip-box {
+  background: linear-gradient(90deg, #ff5f6d, #ff9966);
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+/* pagination styles */
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+.pagination span,
+.pagination a {
+  display: inline-block;
+  padding: 6px 10px;
+  background-color: #1f2937;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  min-width: 32px;
+  text-align: center;
+}
+.pagination a:hover {
+  background-color: #a2cf27;
+  color: #000;
+}
+
+.pagination .active {
+  background-color: #d32f2f;
+  color: #fff;
+}
+
+/* anime grid styles */
+
+.anime-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+  padding: 15px;
+}
+
+.anime-card img {
+  width: 100%;
+  height: 90%;
+  border-radius: 6px;
+}
+.anime-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #e5e7eb;
+    line-height: 1.4;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.anime-card:hover .anime-title {
+  color: #a2cf27;
+}
 /*footer styles*/
 footer {
     background-color: #111;
