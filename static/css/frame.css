@@ -91,6 +91,45 @@ input::placeholder{
 .has-dropdown:hover .dropdown-content{
     display: block;
 }
+
+/* Genre grid styles */
+.genre-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 20px;
+    padding:0;
+    margin: 0;
+    background-color: #fff;
+}
+.genre-grid a{
+    color: #333 !important;
+    font-size: 14px;
+    display: block;
+    text-decoration: none;
+}
+.genre-grid a:hover {
+    color: #a2cf27 !important; 
+}
+
+.season-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 20px;
+    padding:0;
+    margin: 0;
+    background-color: #fff;
+}
+.season-grid a{
+    color: #333 !important;
+    font-size: 14px;
+    display: block;
+    text-decoration: none;
+}
+.season-grid a:hover {
+    color: #a2cf27 !important; 
+}
 /* Main content styles */
 /* Content-wraper styles */
 .second-main-container{
