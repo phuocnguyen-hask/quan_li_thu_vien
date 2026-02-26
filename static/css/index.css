@@ -313,22 +313,42 @@ input::placeholder{
     gap: 10px;
     align-items: center;
 }
-.hot-card{
-    color: #fff;
-    background-color: #212a2f;
+.hot-card {
     display: flex;
+    align-items: center;
     gap: 10px;
-    padding: 10px;
+
+    background-color: #212a2f;
+    padding: 8px;
     border-radius: 5px;
+
+    max-width: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+.hot-card img {
+    width: 55px;
+    height: 85px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.hot-card .title {
+    display: block;
+
+    flex: 1;
+    min-width: 0;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    font-size: 14px;
+    color: #9fb3c8;
 }
 .hot-content img{
     width: 55px;
     height: 85px;
-}
-.hot-content .title{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 .hot-content a{
     color: #78909c;
@@ -415,12 +435,6 @@ input::placeholder{
     width: 150px;
     height: 200px;
 }
-.home-card .title{
-    margin: 10px 0 0 0;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
 /* card hover effect */
 .click-to-watch {
     position: relative;
@@ -428,6 +442,14 @@ input::placeholder{
     width: 150px;
     text-decoration: none;
     color: inherit;
+}
+.title {
+    color: #fff;
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .play-overlay {
     position: absolute;
@@ -461,11 +483,17 @@ input::placeholder{
 .click-to-watch:hover .play-overlay {
     opacity: 1;
 }
+.view{
+    color: #a39898;
+}
 
 .click-to-watch:hover .play-btn {
     transform: scale(1);
 }
-
+.hot-card.click-to-watch {
+    display: flex;
+    width: 100%;
+}
 
 /*footer styles*/
 footer {
