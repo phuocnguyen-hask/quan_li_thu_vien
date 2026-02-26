@@ -4,9 +4,9 @@ body{
     padding:0;
 }
 .big-container{
-    background-color: transparent;
+    background-color: #0f1416;
     max-width: 85vw;
-    margin: 0 auto;
+    margin: 5px auto;
     padding: 20px;
     border-radius: 5px;
 }
@@ -135,13 +135,10 @@ input::placeholder{
 /* Movie slider styles */
 .movie-section{
     position: relative;
-    margin: 20px auto;
     display: flex;
     flex-direction: column;
     background-color:transparent;
-    padding: 20px 0;
     max-width: 100%;
-    width: 95%;
     overflow: hidden;
 }
 .movie-slider{
@@ -151,7 +148,6 @@ input::placeholder{
     overflow-x: auto;
     gap: 5px;
     scroll-behavior: smooth;
-    padding: 0;
 }
 .movie-slider .movie-item img{
     border-radius: 5px;
@@ -198,16 +194,14 @@ input::placeholder{
 .next-btn { right: 0; }
 /* Movie details styles */
 .main-container{
-    background-color: #0f1416;
+    width: 100%;
+    margin: 0 auto;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
-    margin: 0px;
-    padding: 0px;
     border-radius: 5px;
 }
 .second-main-container{
-    width: 95%;
-    margin: 0 auto;
     background-color: transparent;
     display:grid;
     grid-template-columns: 3fr 1fr;
@@ -225,8 +219,8 @@ input::placeholder{
 .sidebar{
     display: flex;
     flex-direction: column;
+    margin: 5px 0 0 0;
     gap: 5px;
-    margin: 5px;
     min-width: 0px;
 }
 .sidebar-box{
@@ -372,6 +366,8 @@ input::placeholder{
 /*content-left styles*/
 .content-left{
     background-color: transparent;
+    margin: 0;
+    padding: 0;
     border-radius: 5px;
 }
 .detail-navbar{
@@ -408,7 +404,6 @@ input::placeholder{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
-    padding: 10px;
 }
 .watch-more{
     background-color: #547792;
