@@ -141,6 +141,7 @@ input::placeholder{
     background-color:transparent;
     padding: 20px 0;
     max-width: 100%;
+    width: 95%;
     overflow: hidden;
 }
 .movie-slider{
@@ -205,6 +206,8 @@ input::placeholder{
     border-radius: 5px;
 }
 .second-main-container{
+    width: 95%;
+    margin: 0 auto;
     background-color: transparent;
     display:grid;
     grid-template-columns: 3fr 1fr;
@@ -371,7 +374,6 @@ input::placeholder{
     background-color: transparent;
     border-radius: 5px;
 }
-
 .detail-navbar{
     display: flex;
     gap: 20px;
