@@ -4,9 +4,9 @@ body{
     padding:0;
 }
 .big-container{
-    background-color: transparent;
+    background-color: #0f1416;
     max-width: 85vw;
-    margin: 0 auto;
+    margin: 5px auto;
     padding: 20px;
     border-radius: 5px;
 }
@@ -132,6 +132,14 @@ input::placeholder{
 }
 /* Main content styles */
 /* Content-wraper styles */
+.main-container{
+    width: 100%;
+    margin: 0 auto;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
 .second-main-container{
     background-color: transparent;
     display:grid;

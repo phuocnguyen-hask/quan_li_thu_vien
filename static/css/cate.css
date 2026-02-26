@@ -4,9 +4,9 @@ body{
     padding:0;
 }
 .big-container{
-    background-color: transparent;
+    background-color: #0f1416;
     max-width: 85vw;
-    margin: 0 auto;
+    margin: 5px auto;
     padding: 20px;
     border-radius: 5px;
 }
