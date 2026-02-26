@@ -34,11 +34,11 @@ const end = Math.min(start + ITEMS_PER_PAGE - 1, TOTAL_ITEMS);
 
 for (let i = start; i <= end; i++){
     const card = document.createElement('div');
-    card.className = 'anime-card';
+    card.className = 'anime-card click-to-watch';
     card.innerHTML = `
         <img src="images/cate/${genre}/thumb${i}.jpg"
              onerror="this.style.display='none'">
-        <div class="anime-title">Anime ${i}</div>
+        <span class="anime-title">Anime ${i}</span>
     `;
     list.appendChild(card);
 }
