@@ -1,1 +1,1 @@
-File frame.html và css.html là cái sườn để làm các page khác
+File `frame.html` và `frame.css` là cái sườn để làm các page khác
