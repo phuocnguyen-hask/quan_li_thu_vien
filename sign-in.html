@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hihi</title>
+    <link rel="stylesheet" href="static/css/sign-in.css">
+</head>
+<body>
+    <!-- nav bar -->
+     <nav class="navbar">
+            <div class="logo">
+                <img src="path_to_logo.png" alt="Meo meo meo">
+            </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">TRANG CHỦ</a></li>
+
+            <li class="has-dropdown"><a href="#">THỂ LOẠI <i class="arrow-down"></i></a>
+                <div class="dropdown-content">
+                    <ul class="genre-grid">
+                        <li><a href="cate.html?type=action">Action</a></li>
+                        <li><a href="cate.html?type=adventure">Adventure</a></li>
+                        <li><a href="cate.html?type=comedy">Comedy</a></li>
+                        <li><a href="cate.html?type=drama">Drama</a></li>
+                        <li><a href="cate.html?type=fantasy">Fantasy</a></li>
+                        <li><a href="cate.html?type=horror">Horror</a></li>
+                        <li><a href="cate.html?type=romance">Romance</a></li>
+                        <li><a href="cate.html?type=sci-fi">Sci-Fi</a></li>
+                        <li><a href="cate.html?type=slice-of-life">Slice of Life</a></li>
+                        <li><a href="cate.html?type=sports">Sports</a></li>
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="has-dropdown"><a href="#">SEASON <i class="arrow-down"></i></a>
+                <div class="dropdown-content">
+                    <ul class="season-grid">
+                        <li><a href="#">Mùa Xuân 2026</a></li>
+                        <li><a href="#">Mùa Hè 2026</a></li>
+                        <li><a href="#">Mùa Thu 2026</a></li>
+                        <li><a href="#">Mùa Đông 2026</a></li>
+                        <li><a href="#">Mùa Xuân 2025</a></li>
+                        <li><a href="#">Mùa Hè 2025</a></li>
+                        <li><a href="#">Mùa Thu 2025</a></li>
+                        <li><a href="#">Mùa Đông 2025</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">THƯ VIỆN</a></li>
+            <li><a href="#">LỊCH CHIẾU</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <div class="search-box">
+                <input type="text" placeholder="Tìm: tên tiếng nhật, anh, việt">
+            </div>
+            <a href="#" class="btn-login">Đăng nhập</a>
+        </div>
+    </nav>
+    <div class="big-container">    
+    <main class="main-container">
+        <div class="second-main-container">
+            <div class="content-wraper">
+                <div class="sign-in-box">
+                    <div class="notice-box">
+                        <p><span>LƯU Ý:</span> ĐĂNG NHẬP TÀI KHOẢN GIÚP LƯU LỊCH SỬ XEM VÀ LƯU PHIM</p>
+                    </div>
+                    <div class="sign-in-label">
+                        <p>ĐĂNG NHẬP!</p>
+                    </div>
+                    <div class="sign-in-method">
+                        <a class="facebook" href="#"><img src="images/logo/facebook.png" alt="Meta icon"><span>Sign in with Facebook</span></a>
+                        <a class="google" href="#"><img src="images/logo/google-icon.png" alt="Google icon"><span>Sign in with Google</span></a>
+                    </div>
+                    <div class="sign-in-little-box">
+                        <div class="or"><p>Hoặc</p></div>
+                        <form class="login-form" action="/login" method="post">
+                            <div class="form-field">
+                                <label for="email">
+                                    <span class="icon">📧</span>
+                                        Email đăng nhập:
+                                </label>
+                                <input
+                                id="email"
+                                name="email"
+                                type="email"
+                                autocomplete="email"
+                                required
+                                />
+                            </div>
+
+                            <div class="form-field">
+                                <label for="password">
+                                    <span class="icon">🔒</span>
+                                        Mật khẩu:
+                                </label>
+                                <input
+                                id="password"
+                                name="password"
+                                type="password"
+                                autocomplete="current-password"
+                                required
+                                />
+                            </div>
+
+                            <a href="/forgot-password" class="forgot">
+                                Quên mật khẩu?
+                            </a>
+
+                            <div class="form-actions">
+                                <label class="remember">
+                                    <input type="checkbox" name="remember" />
+                                    Lưu mật khẩu
+                                </label>
+
+                                <button type="submit" class="btn-login">
+                                    ĐĂNG NHẬP
+                                </button>
+                            </div>
+
+                        </form>
+                
+                    </div>
+                </div>
+            </div>
+            <aside class="sidebar">
+                    <div class="sidebar-box">
+                        <h3>Hôm nay xem gì?</h3>
+                        <hr>
+                        <p>Nếu bạn chưa biết xem gì, hãy để chúng tôi gợi ý cho bạn!</p>
+                        <button class="random-button">Gợi ý <strong>ngẫu nhiên</strong></button>
+                    </div>
+                    <div class="sidebar-box">
+                        <p>ANIME MỚI CẬP NHẬT</p>
+                        <hr>
+                        <ul class="recent-update-aside">
+                            <li class="recent-anime">
+                                <a href="#">Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Kousou</a>
+                                <span>Tập 9</span>
+                            </li>
+                            <li class="recent-anime">
+                                <a href="#">Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen</a>
+                                <span>Tập 9</span>
+                            </li>
+                            <li class="recent-anime">
+                                <a href="#">Sousou no Frieren 2nd Season</a>
+                                <span>Tập 9</span>
+                            </li>
+                            <li class="recent-anime">
+                                <a href="#">Jigokuraku 2nd Season</a>
+                                <span>Tập 9</span>
+                            </li>
+                            <li class="recent-anime">
+                                <a href="#">Yuusha-kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku</a>
+                                <span>Tập 9</span>
+                            </li>
+                            <li class="recent-anime">
+                                <a href="#">[Oshi no Ko] 3rd Season</a>
+                                <span>Tập 9</span>
+                            </li>
+                            <li class="recent-anime">
+                                <a href="#">Enen no Shouboutai: San no Shou Part 2</a>
+                                <span>Tập 9</span>
+                            </li>
+                            <li class="recent-anime">
+                                <a href="#">Fate/strange Fake</a>
+                                <span>Tập 9</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-box">
+                        <div class="hot-title">
+                            <p>HOT TUẦN</p>
+                            <p>TV/Series</p>
+                            <p>Movie/OVA</p>
+                        </div>
+                        <div class="hot-content">
+                            <a class="hot-card click-to-watch">
+                                <img src="images/hot_week/thumb1.jpg" width="150">
+                                <div class="play-overlay">
+                                    <span class="play-btn">▶</span>
+                                </div>
+                                <span class="title" href="#">Sousou no Frieren 2nd Season</span>
+                            </a>
+                            <a class="hot-card click-to-watch">
+                                <img src="images/hot_week/thumb2.jpg" alt="" class="src">
+                                <div class="play-overlay">
+                                    <span class="play-btn">▶</span>
+                                </div>
+                                <span class="title" href="#">Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen</span>
+                            </a>
+                            <a class="hot-card click-to-watch">
+                                <img src="images/hot_week/thumb3.jpg" alt="" class="src">
+                                <div class="play-overlay">
+                                    <span class="play-btn">▶</span>
+                                </div>
+                                <span class="title" href="#">Jigokuraku 2nd Season</span>
+                            </a>
+                            <a class="hot-card click-to-watch">
+                                <img src="images/hot_week/thumb4.jpg" alt="" class="src">
+                                <div class="play-overlay">
+                                    <span class="play-btn">▶</span>
+                                </div>
+                                <span class="title" href="#">Yuusha-kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku</span>
+                            </a>
+                            <a class="hot-card click-to-watch">
+                                <img src="images/hot_week/thumb5.jpg" alt="" class="src">
+                                <div class="play-overlay">
+                                    <span class="play-btn">▶</span>
+                                </div>
+                                <span class="title" href="#">[Oshi no Ko] 3rd Season</span>
+                            </a>
+                        </div>
+                    </div>
+            </aside>
+        </div>
+    </main>
+    </div>
+    <footer>
+        © 2026 Meo meo meo reserved.
+    </footer>
+    <script src="static/js/sign-in.js"></script>
+</body>
+</html>
