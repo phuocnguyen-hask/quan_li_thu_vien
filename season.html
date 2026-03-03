@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hihi</title>
-    <link rel="stylesheet" href="static/css/cate.css">
+    <title>Season</title>
+    <link rel="stylesheet" href="static/css/season.css">
 </head>
 <body>
     <!-- nav bar -->
@@ -16,7 +16,7 @@
         <ul class="nav-links">
             <li><a href="index.html">TRANG CHỦ</a></li>
 
-            <li class="has-dropdown"><a href="cate.html">THỂ LOẠI <i class="arrow-down"></i></a>
+            <li class="has-dropdown"><a href="#">THỂ LOẠI <i class="arrow-down"></i></a>
                 <div class="dropdown-content">
                     <ul class="genre-grid">
                         <li><a href="cate.html?type=action">Action</a></li>
@@ -33,7 +33,7 @@
                 </div>
             </li>
             
-            <li class="has-dropdown"><a href="#">SEASON <i class="arrow-down"></i></a>
+            <li class="has-dropdown"><a href="season.html">SEASON <i class="arrow-down"></i></a>
                 <div class="dropdown-content">
                     <ul class="season-grid">
                         <li><a href="season.html?year=2026&season=spring">Mùa Xuân 2026</a></li>
@@ -47,6 +47,7 @@
                     </ul>
                 </div>
             </li>
+
             <li><a href="#">THƯ VIỆN</a></li>
             <li><a href="#">LỊCH CHIẾU</a></li>
         </ul>
@@ -58,26 +59,31 @@
             <a href="sign-in.html" class="btn-login">Đăng nhập</a>
         </div>
     </nav>
+
     <div class="big-container">    
     <main class="main-container">
         <div class="second-main-container">
             <div class="content-wraper">
                 <div class="breadcrumb">
                     <a href="index.html">🏠 Trang chủ</a> <span class="separator">/</span>
-                    <a href="#">Thể loại</a> <span class="separator">/</span>
-                    <a id="breadcrumb-genre"></a>
+                    <a id="breadcrumb-year"></a> <span class="separator">/</span>
+                    <a id="breadcrumb-season"></a>
                 </div>
-                <h1 class="genre-title" id="genre-title"></h1>
+
+                <h1 class="genre-title" id="season-title"></h1>
+
                 <div class="tip-box">
                     <b>MẸO SỬ DỤNG:</b>
                     Sử dụng chức năng lọc Anime trên thanh công cụ để lọc những phim bạn đang cần xem chính xác nhất.
                 </div>
+
                 <div class="pagination" id="pagination-top"></div>
                 <div class="anime-grid" id="anime-list"></div>
                 <div class="pagination" id="pagination-bottom"></div>
                 
             </div>
         
+            
             <aside class="sidebar">
                     <div class="sidebar-box">
                         <h3>Hôm nay xem gì?</h3>
@@ -171,11 +177,13 @@
         </div>
     </main>
     </div>
+
     <footer>
         © 2026 Meo meo meo reserved.
     </footer>
     
-    <script src="static/js/cate.js"></script>
+    <!-- ✅ ĐỔI SCRIPT -->
+    <script src="static/js/season.js"></script>
     <script src="static/js/index.js"></script>
 </body>
 </html>

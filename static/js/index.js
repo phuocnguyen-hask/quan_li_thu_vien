@@ -35,3 +35,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelectorAll(".nav-links > li > a");
+  const currentPage = window.location.pathname.split("/").pop();
+
+  links.forEach(link => {
+    const linkPage = link.getAttribute("href");
+
+    if (!linkPage) return;
+
+    if (currentPage.startsWith("season.html") && linkPage === "season.html") {
+      link.classList.add("active");
+    }
+
+    if (currentPage === linkPage) {
+      link.classList.add("active");
+    }
+  });
+});
